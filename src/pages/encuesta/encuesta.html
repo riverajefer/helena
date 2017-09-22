@@ -1,0 +1,105 @@
+<ion-content>
+    <ion-slides direction="vertical">
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 class="sidebar">
+                        <h1>Helth Food</h1>
+                        <ul class="lista-icons">
+                            <li>
+                                <div class="icono-servicio">
+                                    <img src="assets/images/producto.svg" alt="icon1" class="activo" />
+                                </div>
+                                <p>Producto</p>
+                            </li>
+                            <li>
+                                <div class="icono-servicio">
+                                    <img src="assets/images/servicio.svg" alt="icon1" />
+                                </div>
+                                <p>Servicio</p>
+                            </li>
+                            <li>
+                                <div class="icono-servicio">
+                                    <img src="assets/images/mesa.svg" alt="icon1" />
+                                </div>
+                                <p>Restaurante</p>
+                            </li>
+                            <li>
+                                <div class="icono-servicio">
+                                    <img src="assets/images/persona.svg" alt="icon1" />
+                                </div>
+                                <p>Datos</p>
+                            </li>
+                        </ul>
+                    </ion-col>
+                    <ion-col col-8 class="principal">
+                        <h2>Califique los siguientes aspectos del producto:</h2>
+                        <ion-list no-lines class="lista_preguntas">
+                            <ion-item>
+                                <div item-start>
+                                    <p class="item_pregunta">Sabor</p>
+                                </div>
+                                <div item-end>
+                                    <rating [(ngModel)]="rate" readOnly="false" max="5" emptyStarIconName="star-outline" halfStarIconName="star-half" starIconName="star" nullable="false" (ngModelChange)="onModelChange($event)">
+                                    </rating>
+                                </div>
+                            </ion-item>
+                            <ion-item>
+                                <div item-start>
+                                    <p class="item_pregunta">Temperatura</p>
+                                </div>
+                                <div item-end>
+                                    <rating [(ngModel)]="rate" readOnly="false" max="5" emptyStarIconName="star-outline" halfStarIconName="star-half" starIconName="star" nullable="false" (ngModelChange)="onModelChange($event)">
+                                    </rating>
+                                </div>
+                            </ion-item>
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 class="sidebar">
+                        <h1>Helth Food</h1>
+                        <ul class="lista-icons">
+                            <li>
+                                <div class="icono-servicio">
+                                    <img src="assets/images/producto.svg" alt="icon1" />
+                                </div>
+                                <p>Producto</p>
+                            </li>
+                            <li>
+                                <div class="icono-servicio">
+                                    <img src="assets/images/servicio.svg" alt="icon1" class="activo" />
+                                </div>
+                                <p>Servicio</p>
+                            </li>
+                            <li>
+                                <div class="icono-servicio">
+                                    <img src="assets/images/mesa.svg" alt="icon1" />
+                                </div>
+                                <p>Restaurante</p>
+                            </li>
+                            <li>
+                                <div class="icono-servicio">
+                                    <img src="assets/images/persona.svg" alt="icon1" />
+                                </div>
+                                <p>Datos</p>
+                            </li>
+                        </ul>
+                    </ion-col>
+                    <ion-col col-8>
+                        <p>Principal</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-slide>
+
+        <ion-slide>
+            <h1>Slide 3</h1>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

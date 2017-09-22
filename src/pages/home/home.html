@@ -1,14 +1,19 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="home" padding>
+    <h1>Helth Food</h1>
+    <p>Su opinión es muy importante; ayúdenos a mejorar</p>
+    <ion-list inset>
+        <ion-item>
+            <ion-label>Indique, por favor, el plato consumido</ion-label>
+            <ion-select [(ngModel)]="gaming">
+                <ion-option value="1">Sopa Gratinada</ion-option>
+                <ion-option value="2">Espagueti con pollo</ion-option>
+                <ion-option value="3">Sopa del día</ion-option>
+                <ion-option value="4">Burguer master</ion-option>
+                <ion-option value="5">sandwich de atun</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <button color="naranja" (click)="siguiente()" large ion-button full>Siguiente</button>
+        </ion-item>
+    </ion-list>
 </ion-content>
